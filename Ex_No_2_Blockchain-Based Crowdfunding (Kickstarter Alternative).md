@@ -81,3 +81,4 @@ Teaches decentralized fundraising.
 Avoids fraud by ensuring funds are only transferred if the goal is met.
 
 # RESULT: 
+Hence we implemented Blockchain-Based Crowdfunding (Kickstarter Alternative)
