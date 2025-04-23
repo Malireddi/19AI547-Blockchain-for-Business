@@ -58,9 +58,16 @@ contract ZKVoting {
 ```
 # Expected Output:
 Voters commit their votes privately.
+![image](https://github.com/user-attachments/assets/1762aa89-67b3-42a6-b89d-a283b6b15b86)
+
 
 
 When revealed, the contract verifies correctness but keeps votes anonymous.
+![image](https://github.com/user-attachments/assets/68e0ef4e-9757-4350-bc20-5ea1e9189b98)
+
+![image](https://github.com/user-attachments/assets/f8c641e6-f7ab-437d-a5f6-22c2657b73cc)
+
+
 
 
 Final result is publicly verifiable without exposing individual votes.
