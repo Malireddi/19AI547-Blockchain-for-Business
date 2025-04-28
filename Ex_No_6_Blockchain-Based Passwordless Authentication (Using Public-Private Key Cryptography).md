@@ -42,12 +42,18 @@ contract PasswordlessAuth {
 
 # Expected Output:
 Users can register without a password.
+![image](https://github.com/user-attachments/assets/009a0337-5215-49c9-a694-1c6708f1c99d)
 
 
 Users sign a challenge with their private key for authentication.
+![image](https://github.com/user-attachments/assets/5828c38a-d3c6-45aa-9508-326f055f27ad)
 
 
 The smart contract verifies signatures to confirm identity.
+![Screenshot (74)](https://github.com/user-attachments/assets/5a353dd9-80b0-4ad6-9f1c-57b732ba5dfd)
+
+![Screenshot (75)](https://github.com/user-attachments/assets/276590d1-5956-4275-8711-6b00646f9fc5)
+
 
 
 
@@ -61,3 +67,5 @@ Uses Ethereum's built-in cryptographic functions.
 Inspired by Web3 login solutions like MetaMask authentication.
 
 # RESULT: 
+
+Hence we implemented code for Blockchain-Based Passwordless Authentication (Using Public-Private Key Cryptography)
