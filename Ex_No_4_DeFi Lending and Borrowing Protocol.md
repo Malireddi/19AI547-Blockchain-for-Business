@@ -27,7 +27,7 @@ If collateral < liquidation threshold, liquidators can repay the borrower's debt
 
 Program:
 ```
-// SPDX-License-Identifier: MIT
+//SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
 contract DeFiLending {
@@ -53,11 +53,16 @@ contract DeFiLending {
     }
 
     function borrow(uint256 amount) public payable {
-        require(msg.value >= (amount * liquidationThreshold) / 100, "Not enough collateral");
+        require(msg.value >= (amount * liquidationThreshold) / 100, "Nota enough collateral");
         borrowed[msg.sender] += amount;
         collateral[msg.sender] += msg.value;
         payable(msg.sender).transfer(amount);
         emit Borrowed(msg.sender, amount, msg.value);
+    }
+    function reduceCollateral(address user, uint256 amount) public {
+    require(msg.sender == owner, "Only owner can reduce");
+    require(collateral[user] >= amount, "Not enough collateral to reduce");
+    collateral[user] -= amount;
     }
 
     function liquidate(address borrower) public {
@@ -75,29 +80,23 @@ contract DeFiLending {
 ```
 # Expected Output:
 Users can deposit ETH and earn interest.
+![image](https://github.com/user-attachments/assets/dc82d9e0-c177-4359-90a1-4195ad73b540)
 
 
 Users can borrow ETH by providing collateral.
+![image](https://github.com/user-attachments/assets/333169d1-c66c-471f-82bc-1b8f6ae5ce94)
+
+
+![image](https://github.com/user-attachments/assets/5ee99a90-e93d-41bf-ac94-99ce6bd8f232)
 
 
 If collateral < 150% of borrowed amount, liquidators can seize the collateral.
+![image](https://github.com/user-attachments/assets/458ac8b3-42a7-4f4c-aeb7-25a7ee9ab2b4)
 
 
 
 # High-Level Overview:
 Teaches key DeFi concepts: lending, borrowing, collateral, liquidation.
-
-### Deposit in lender's account:
-![image](https://github.com/user-attachments/assets/d4c791f8-6633-47fc-b828-daf789b06ef0)
-
-### Borrowing 2 eth, by keeping collateral as 3eth:
-![image](https://github.com/user-attachments/assets/29e7fc49-6c34-4cd6-a05a-c9c65850fd61)
-
-### Liquidate borrower:
-![image](https://github.com/user-attachments/assets/cf040460-74f2-43e7-9cbb-cbfc4376a47e)
-
-
-
 
 
 Introduces risk management: overcollateralization and liquidation.
