@@ -105,4 +105,4 @@ Introduces risk management: overcollateralization and liquidation.
 Directly related to DeFi protocols like Aave and Compound.
 
 # RESULT : 
-Hence we implemented 
+Hence we implemented code for DeFi Lending and Borrowing Protocol
