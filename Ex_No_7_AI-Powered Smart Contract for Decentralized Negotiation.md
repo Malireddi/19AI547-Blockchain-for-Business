@@ -92,13 +92,19 @@ contract AIPoweredNegotiation {
 ```
 
 # Expected Output:
+
+![image](https://github.com/user-attachments/assets/0ec6487a-fd4a-42ba-8ad1-b04ee7dba209)
+
 Buyers submit offers, and the contract auto-negotiates the price.
+![image](https://github.com/user-attachments/assets/4c1c1a66-d86c-4fc4-b18d-2a06fd9a5c77)
 
 
 If the buyer’s offer is fair, the deal is executed.
+![image](https://github.com/user-attachments/assets/66e6ceff-321c-4d12-81e1-a74896a80e52)
 
 
 If the offer is too low, the contract suggests a counteroffer.
+![Uploading image.png…]()
 
 
 
@@ -115,5 +121,5 @@ Can be extended to AI oracles for real-time market data.
 Inspired by AI-enhanced commerce and eBay-like decentralized auctions.
 
 # RESULT:
-
+Hence we implemeted code on AI-Powered Smart Contract for Decentralized Negotiation
 
