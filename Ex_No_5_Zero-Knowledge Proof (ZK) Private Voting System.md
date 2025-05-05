@@ -84,3 +84,4 @@ Prevents vote tampering while maintaining voter privacy.
 Mimics real-world ZK voting applications in governance and DAOs.
 
 # RESULT: 
+Hence we implemented code for Zero-Knowledge Proof (ZK) Private Voting System
