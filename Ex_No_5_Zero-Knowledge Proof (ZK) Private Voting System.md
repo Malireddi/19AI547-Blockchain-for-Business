@@ -18,12 +18,17 @@ The contract verifies if a vote belongs to a registered voter but does not revea
 Step 4: Vote Counting
 Once voting ends, the contract reveals the final tally without linking votes to individuals.
 
-Register eligible voters by issuing them unique cryptographic credentials.
-Allow voters to cast encrypted votes along with zero-knowledge proofs ensuring vote validity without revealing choices.
-Collect and store all encrypted votes and their corresponding proofs on the blockchain.
-Verify each vote's validity using the zero-knowledge proofs without decrypting the actual votes.
-Tally the votes using homomorphic encryption techniques to aggregate results without compromising individual vote privacy.
-Publish the final results along with cryptographic proofs to ensure transparency and verifiability of the election outcome.
+1.Register eligible voters by issuing them unique cryptographic credentials.
+
+2.Allow voters to cast encrypted votes along with zero-knowledge proofs ensuring vote validity without revealing choices.
+
+3.Collect and store all encrypted votes and their corresponding proofs on the blockchain.
+
+4.Verify each vote's validity using the zero-knowledge proofs without decrypting the actual votes.
+
+5.Tally the votes using homomorphic encryption techniques to aggregate results without compromising individual vote privacy.
+
+6.Publish the final results along with cryptographic proofs to ensure transparency and verifiability of the election outcome.
 
 
 # Program:
