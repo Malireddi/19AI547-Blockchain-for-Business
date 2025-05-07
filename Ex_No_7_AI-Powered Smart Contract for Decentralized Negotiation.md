@@ -104,7 +104,7 @@ If the buyer’s offer is fair, the deal is executed.
 
 
 If the offer is too low, the contract suggests a counteroffer.
-![Uploading image.png…]()
+
 
 
 
