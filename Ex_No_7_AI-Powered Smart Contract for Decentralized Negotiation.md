@@ -23,11 +23,19 @@ Time-based price fluctuations.
 
 
 ## Step 2: Smart Contract Counteroffer
-The contract automatically generates a counteroffer if the buyer’s price is within the negotiation range.
+Initialize the blockchain network and deploy smart contracts for decentralized negotiation.
 
+Identify negotiation parameters and constraints for all participating parties.
 
-If the buyer accepts, the transaction is executed on-chain.
+Integrate AI agents to analyze proposals and predict optimal negotiation strategies.
 
+Facilitate iterative proposal exchanges between parties through smart contracts.
+
+Utilize AI to assess proposals and recommend adjustments to reach consensus.
+
+Finalize agreement terms and automatically execute the smart contract upon consensus.
+
+Monitor contract performance and enable AI-driven adjustments for future negotiations.
 
 ## Step 3: Settlement and Price Learning
 Every completed transaction updates the price learning algorithm to refine future pricing decisions.
